@@ -8,5 +8,5 @@ nsp1MERS = fileReader.fileOpener("genes/mersGenome.txt", 279, 857)
 print("\nPrinting out alignment\n")
 
 # Print out alignment
-for a in pairwise2.align.globalxx(nsp1Covid, nsp1MERS):
+for a in pairwise2.align.localxx(nsp1Covid, nsp1MERS):
     print(format_alignment(*a))
