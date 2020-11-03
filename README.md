@@ -12,3 +12,6 @@
 * BioPython
   - `pip3 install biopython`
 * FileOpener
+
+**Project Info**
+* We decided to go with Local Alignment because the two strains we were comparing were not very similar. 

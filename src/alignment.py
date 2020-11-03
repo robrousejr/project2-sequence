@@ -1,4 +1,5 @@
 import fileOpener as fileReader
+import functions as functions
 from Bio import pairwise2
 from Bio.pairwise2 import format_alignment
 
