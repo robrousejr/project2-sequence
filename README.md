@@ -9,8 +9,6 @@
 * nsp1 SARS
 
 **Libraries**
-* BioPython
-  - `pip3 install biopython`
 * FileOpener
 
 **Project Info**
