@@ -38,7 +38,7 @@ class LocalAlignment():
                     best = matrix[i][j]
                     optloc = (i,j)
 
-        print("Scoring:", str(self.scores))
+        print("Scoring: " + str(self.scores))
         print("Optimal Score =", best)
         print("Max location in matrix =", optloc)
 
