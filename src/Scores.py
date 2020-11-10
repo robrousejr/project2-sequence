@@ -1,6 +1,6 @@
 # Gap, Match, Mismatch (-2, 1, -1)
 class Scores():
-    def __init__(self, match, mismatch, gap):
+    def __init__(self, gap, match, mismatch):
         self.match = match
         self.mismatch = mismatch
         self.gap = gap
