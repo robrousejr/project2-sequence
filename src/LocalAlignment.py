@@ -18,8 +18,8 @@ class LocalAlignment():
         # Create the matrix
         matrix = createMatrix(len(self.str1) + 1, len(self.str2) + 1)
 
-        best = 0
-        optloc = (0,0)
+        bestScore = 0
+        maxLocation = (0,0)
 
         # fill in matrix in the right order
         for i in range(1, len(self.str1)+1):
@@ -34,13 +34,13 @@ class LocalAlignment():
                 )
 
                 # track the cell with the largest score
-                if matrix[i][j] >= best:
-                    best = matrix[i][j]
-                    optloc = (i,j)
+                if matrix[i][j] >= bestScore:
+                    bestScore = matrix[i][j]
+                    maxLocation = (i,j)
 
         print("Scoring: " + str(self.scores))
-        print("Optimal Score =", best)
-        print("Max location in matrix =", optloc)
+        print("Optimal Score =", bestScore)
+        print("Max location in matrix =", maxLocation)
 
         # Return the score and optimal location
-        return best, optloc
+        return bestScore, maxLocation
